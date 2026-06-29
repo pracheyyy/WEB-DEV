@@ -1,0 +1,185 @@
+# MERN Stack Roadmap (July – August 2026)
+
+## July – Become a Frontend + Backend Developer
+
+### Week 1 (July 1 – July 7)
+
+### HTML
+
+* HTML Basics
+* Semantic HTML
+* Forms
+
+### CSS
+
+* CSS Basics
+* Flexbox
+* CSS Grid
+* Responsive Design
+* CSS Animations
+
+### JavaScript
+
+* Variables
+* Data Types
+* Operators
+* Functions
+* Objects
+* Arrays
+* Loops
+* DOM Manipulation
+* Events
+* Fetch API
+* Async/Await
+
+### Mini Projects
+
+1. Calculator
+2. Weather App
+3. Todo App
+
+---
+
+### Week 2 (July 8 – July 14)
+
+### React.js
+
+* JSX
+* Components
+* Props
+* State
+* Hooks
+* useEffect
+* React Router
+* Forms
+* API Calls
+
+### Tailwind CSS
+
+* Responsive Design
+* Components
+* Layout
+
+### Mini Project
+
+* E-commerce Frontend
+
+---
+
+### Week 3 (July 15 – July 21)
+
+### Node.js
+
+* Node Basics
+* Express.js
+* Middleware
+* REST APIs
+* CRUD Operations
+* Error Handling
+
+### MongoDB
+
+* Collections
+* Documents
+* Mongoose
+* Relationships
+
+### Authentication
+
+* JWT
+* bcrypt
+* Cookies
+* Authorization
+
+---
+
+### Week 4 (July 22 – July 31)
+
+### Advanced MERN
+
+* File Upload
+* Cloudinary
+* Pagination
+* Search
+* Filtering
+* Sorting
+* Protected Routes
+
+### Deployment
+
+* Deploy Frontend
+* Deploy Backend
+* Deploy Database
+
+---
+
+# August – Build One Industry-Level Project
+
+## Project
+
+HireLens AI – AI-Powered Resume Screening & Recruitment Platform
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* React Router
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+* Mongoose
+
+### Authentication
+
+* JWT
+* bcrypt
+* Cookies
+
+### Storage
+
+* Cloudinary
+
+### AI Features
+
+* Resume Parsing
+* Skill Extraction
+* Resume Ranking
+* Candidate Matching
+* Interview Question Generation
+
+### Main Features
+
+* Authentication (Login, Signup, Forgot Password)
+* HR Dashboard
+* Resume Upload
+* Candidate Dashboard
+* AI Resume Analysis
+* Resume Ranking
+* Search & Filters
+* Analytics Dashboard
+* Admin Panel
+
+### Deployment
+
+* Frontend: Vercel
+* Backend: Render
+* Database: MongoDB Atlas
+
+---
+
+## Goal by the End of August
+
+* Build complete MERN applications from scratch.
+* Understand frontend and backend integration.
+* Create secure authentication systems.
+* Build REST APIs.
+* Work with MongoDB effectively.
+* Deploy a production-ready application.
+* Have one strong, resume-worthy full-stack project on GitHub.
