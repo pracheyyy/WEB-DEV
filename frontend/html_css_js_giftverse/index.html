@@ -9,14 +9,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
 <header>
   <div class="navbar">
     <div class="logo">
       <span class="ribbon-dot"></span>
       giftverses
     </div>
-    <nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="mainNav">
       <ul>
         <li><a href="#shop">shop</a></li>
         <li><a href="#occasions">occasions</a></li>
@@ -25,25 +30,27 @@
       </ul>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn">♡</button>
-      <button class="icon-btn">🛍
-        <span class="badge">3</span>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡
+        <span class="badge" id="wishlistCount" style="display:none;">0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="Cart">🛍
+        <span class="badge" id="cartCount" style="display:none;">0</span>
       </button>
     </div>
   </div>
 </header>
- 
+
 <section class="hero">
   <div class="hero-copy">
     <span class="hero-eyebrow">✦ Free gift wrap on every order</span>
     <h1>A gift for every <em>world</em><br>you belong to</h1>
     <p>From first birthdays to fortieth anniversaries — find something that actually fits the person, not just the occasion.</p>
     <div class="hero-ctas">
-      <button class="btn-primary">Start gifting</button>
-      <button class="btn-secondary">Take the gift quiz</button>
+      <button class="btn-primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Start gifting</button>
+      <button class="btn-secondary" onclick="document.getElementById('occasions').scrollIntoView({behavior:'smooth'})">Take the gift quiz</button>
     </div>
   </div>
- 
+
   <div class="hero-visual">
     <div class="tag-label">Trending this week</div>
     <div class="tag-title">What people are gifting</div>
@@ -55,99 +62,31 @@
     </div>
   </div>
 </section>
- 
+
 <div class="cut-line"><span class="scissors">✂</span><span>find a gift by occasion</span><span class="scissors">✂</span></div>
- 
+
 <section class="occasions-strip" id="occasions">
-  <div class="occasion-pill"><span class="emoji">🎂</span><span class="label">Birthday</span></div>
-  <div class="occasion-pill"><span class="emoji">💍</span><span class="label">Anniversary</span></div>
-  <div class="occasion-pill"><span class="emoji">🎓</span><span class="label">Graduation</span></div>
-  <div class="occasion-pill"><span class="emoji">🏡</span><span class="label">Housewarming</span></div>
-  <div class="occasion-pill"><span class="emoji">👶</span><span class="label">New Baby</span></div>
-  <div class="occasion-pill"><span class="emoji">💼</span><span class="label">Corporate</span></div>
+  <div class="occasion-pill" data-filter="birthday"><span class="emoji">🎂</span><span class="label">Birthday</span></div>
+  <div class="occasion-pill" data-filter="anniversary"><span class="emoji">💍</span><span class="label">Anniversary</span></div>
+  <div class="occasion-pill" data-filter="graduation"><span class="emoji">🎓</span><span class="label">Graduation</span></div>
+  <div class="occasion-pill" data-filter="home"><span class="emoji">🏡</span><span class="label">Housewarming</span></div>
+  <div class="occasion-pill" data-filter="baby"><span class="emoji">👶</span><span class="label">New Baby</span></div>
+  <div class="occasion-pill" data-filter="corporate"><span class="emoji">💼</span><span class="label">Corporate</span></div>
 </section>
- 
+
 <section class="section" id="shop">
   <div class="section-head">
     <h2>Curated for you</h2>
-    <a href="#">View all gifts →</a>
+    <a href="#" id="showAllBtn">View all gifts →</a>
   </div>
- 
-  <div class="grid">
- 
-    <div class="product-card">
-      <span class="ribbon-corner">bestseller</span>
-      <div class="product-thumb">🧺</div>
-      <div class="product-info">
-        <span class="product-category">Hampers</span>
-        <span class="product-name">Golden Hour Birthday Hamper</span>
-        <p class="product-desc">Candles, chocolates, a handwritten note card, and a tiny bouquet — all in one box.</p>
-        <div class="price-row"><span class="now">₹1,899</span><span class="was">₹2,399</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
-    <div class="product-card">
-      <div class="product-thumb">🕯️</div>
-      <div class="product-info">
-        <span class="product-category">Home</span>
-        <span class="product-name">Amber & Oud Candle Duo</span>
-        <p class="product-desc">Hand-poured soy candles in reusable ceramic jars. Burns 40+ hours each.</p>
-        <div class="price-row"><span class="now">₹899</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
-    <div class="product-card">
-      <span class="ribbon-corner">new</span>
-      <div class="product-thumb">💌</div>
-      <div class="product-info">
-        <span class="product-category">Personalized</span>
-        <span class="product-name">Engraved Memory Locket</span>
-        <p class="product-desc">Sterling silver locket with a custom photo and engraved date inside.</p>
-        <div class="price-row"><span class="now">₹1,299</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
-    <div class="product-card">
-      <div class="product-thumb">🍫</div>
-      <div class="product-info">
-        <span class="product-category">Edible Gifts</span>
-        <span class="product-name">Belgian Chocolate Truffle Box</span>
-        <p class="product-desc">24-piece assortment, handmade, no preservatives. Comes gift-wrapped.</p>
-        <div class="price-row"><span class="now">₹749</span><span class="was">₹899</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
-    <div class="product-card">
-      <div class="product-thumb">🌿</div>
-      <div class="product-info">
-        <span class="product-category">Plants</span>
-        <span class="product-name">Lucky Bamboo Desk Planter</span>
-        <p class="product-desc">Ceramic planter with a hand-tied gold ribbon. Low maintenance, high charm.</p>
-        <div class="price-row"><span class="now">₹599</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
-    <div class="product-card">
-      <div class="product-thumb">📓</div>
-      <div class="product-info">
-        <span class="product-category">Personalized</span>
-        <span class="product-name">Monogrammed Leather Journal</span>
-        <p class="product-desc">Hand-stitched leather cover with gold-foil initials, refillable pages.</p>
-        <div class="price-row"><span class="now">₹1,049</span></div>
-        <button class="add-btn">Add to cart</button>
-      </div>
-    </div>
- 
+
+  <div class="grid" id="productGrid">
+    <!-- Product cards are rendered by script.js from the PRODUCTS array -->
   </div>
 </section>
- 
+
 <div class="cut-line"><span class="scissors">✂</span><span>why people gift with us</span><span class="scissors">✂</span></div>
- 
+
 <section class="features" id="why">
   <div class="features-inner">
     <div class="feature">
@@ -172,20 +111,20 @@
     </div>
   </div>
 </section>
- 
+
 <section class="cta-section">
   <div class="cta-box">
     <div>
       <h3>Never miss an occasion</h3>
       <p>Get gift reminders, early access to drops, and 10% off your first order.</p>
     </div>
-    <div class="cta-form">
-      <input type="email" placeholder="you@example.com">
-      <button>Subscribe</button>
-    </div>
+    <form class="cta-form" id="subscribeForm">
+      <input type="email" placeholder="you@example.com" id="subscribeEmail" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 </section>
- 
+
 <footer id="footer">
   <div class="footer-inner">
     <div class="footer-col footer-brand">
@@ -195,7 +134,7 @@
       </div>
       <p>Thoughtful gifts for every relationship, every occasion, every budget.</p>
     </div>
- 
+
     <div class="footer-col">
       <h4>Shop</h4>
       <ul>
@@ -205,7 +144,7 @@
         <li><a href="#">Corporate Gifting</a></li>
       </ul>
     </div>
- 
+
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
@@ -215,7 +154,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
- 
+
     <div class="footer-col">
       <h4>Help</h4>
       <ul>
@@ -226,12 +165,35 @@
       </ul>
     </div>
   </div>
- 
+
   <div class="footer-bottom">
     <span>© 2026 Giftverses. All rights reserved.</span>
     <span>Made with ♡ for gift-givers everywhere</span>
   </div>
 </footer>
- 
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-head">
+    <h3>Your cart</h3>
+    <button class="close-btn" id="closeCart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="empty-msg" id="emptyMsg">Your cart is empty. Go find something nice.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">₹0</span>
+    </div>
+    <button class="btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
