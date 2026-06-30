@@ -1,0 +1,71 @@
+/* how css works with html  */
+
+/* inline css  */
+/* <p style="color: blue; font-size: 18px;">This is a blue paragraph.</p> */
+
+/* internal css */
+/* <!DOCTYPE html>
+<html>
+<head>
+<style>
+p{
+        color: green;
+        font-weight: bold;
+}
+</style>
+</head>
+<body>
+<p>This is a green bold paragraph.</p>
+</body>
+</html> */
+
+ /* External CSS (Best Practice)  */
+/* style.css
+h1 {
+  color: darkred;
+  text-align: center;
+} */
+
+/* index.html
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Welcome to CSS</h1> 
+</body>
+</html> */
+
+/* ________________________________________________________________________ */
+
+/* 
+Anatomy of a CSS Rule
+
+sector{
+    property: value;
+}
+ */
+
+/*
+What is the Box Model?
+The box model consists of four layers, from innermost to outermost:
+
+.box {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid gray;
+  margin: 40px;
+}
+*/
+
+/* Typography in CSS  */
+
+/* Flexbox in CSS */
+
+/* CSS Transitions and Animations  */
+
+/* CSS Transformations  */
+
+
