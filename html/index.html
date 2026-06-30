@@ -58,6 +58,7 @@
       <img src="pic.jpg" height="150" width="200">
 
 <!-- list in html  -->
+
       <!-- unordered list -->
        <ul>
             <li>apple</li>
@@ -96,10 +97,84 @@
             </li>
          </ul>
 
+<!-- tables in html  -->
+       
+      <!-- <tr> - row & <td> - data & <th> - header -->
+      <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll number</th>
+        </tr>
+        <tr>
+            <td>Prachi Patil</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Mayur Mundada</td>
+            <td>5</td>
+        </tr>
+      </table>
+
+<!-- form in html -->
+  
+      <form>
+        <!-- text input (for should match with id) -->
+        <label for="name">Name: </label>
+        <input  type="text" id="name"  placeholder="enter your name">
          
+        <!-- passward  -->
+         <label for="passward">Passward: </label>
+         <input typr="passward" id="passward">
 
+        <!-- submit button  -->
+          <input type="submit" value="submit">
 
+        <!-- placeholder - hint of input  -->
+        <!-- <input type="text" placeholder="enter your name"> -->
 
+        <!-- radio buttons  -->
+        p>Choose your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- checkbox  -->
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label>
+        <br>
+        <input type="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <!-- Dropdown List (Select Menu)  -->
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="bangalore">Bangalore</option>
+         </select>
+
+        <!-- Textarea (Multiline Input)  -->
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+<!-- embedded audio & video in html  -->
+
+        <audio controls>
+         <source src="audio.mp3" type="audio/mpeg">
+         <source src="audio.ogg" type="audio/ogg">
+         Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+         <source src="video.mp4" type="video/mp4">
+         <source src="movie.ogg" type="video/ogg">
+         Your browser does not support the video tag.
+        </video>
+
+      </form>
 
 </body>
 </html>
